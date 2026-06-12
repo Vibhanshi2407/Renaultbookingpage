@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./sidebar.css";
-import {over}from "../../assets/Images/elements.png";
+import over from "../../assets/Images/elements.png";
 // import {deal} from ".././src/assets/Images/total.png";
-import {deal} from "../../assets/Images/total.png"
+import deal from "../../assets/Images/total.png"
 
 const navItems = [
   {
