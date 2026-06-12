@@ -1,0 +1,65 @@
+import { NavLink } from "react-router-dom";
+import "./sidebar.css";
+
+const navItems = [
+  {
+    icon: (
+      <img
+        src="/src/assets/Images/elements.png"
+        alt="Overview"
+        width={20}
+        height={20}
+      />
+    ),
+    label: "Overview",
+    path: "/dashboard",
+  },
+  {
+    icon: (
+      <img
+        src="/src/assets/Images/total.png"
+        alt="Manage Dealers"
+        width={20}
+        height={20}
+      />
+    ),
+    label: "Manage Dealers",
+    path: "/dealers",
+  },
+];
+
+export default function Sidebar() {
+  return (
+    <aside className="sidebar">
+      <div className="sidebar-logo">
+        <NavLink to="/dashboard">
+          <img
+            src="/src/assets/Images/rlogo.png"
+            alt="Logo"
+            width={60}
+            height={60}
+          />
+        </NavLink>
+      </div>
+
+      <nav className="sidebar-nav">
+        {navItems.map((item, index) => (
+          <NavLink
+            key={index}
+            to={item.path}
+            className={({ isActive }) =>
+              `sidebar-link ${isActive ? "sidebar-link--active" : ""}`
+            }
+          >
+            <span className="sidebar-link-icon">
+              {item.icon}
+            </span>
+            <span className="sidebar-link-label">
+              {item.label}
+            </span>
+          </NavLink>
+        ))}
+      </nav>
+    </aside>
+  );
+}

@@ -1,0 +1,126 @@
+.booking-table-wrapper {
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.booking-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.booking-table thead tr {
+  border-bottom: 1px solid #E5E7EB;
+  background: #ffffff;
+}
+
+.booking-table th {
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #888888;
+  white-space: nowrap;
+}
+
+.booking-table tbody tr {
+  border-bottom: 1px solid #F3F4F6;
+  transition: background 0.12s;
+}
+
+.booking-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.booking-table tbody tr:hover {
+  background: #F9F9F9;
+}
+
+.booking-row--highlighted {
+  background: #F2F2F2 !important;
+}
+
+.booking-table td {
+  padding: 14px 16px;
+  font-size: 13.5px;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.booking-td-id {
+  font-weight: 600;
+  color: #111111;
+}
+
+.booking-td-name {
+  font-weight: 500;
+  color: #111111;
+}
+
+.b-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px;
+  font-size: 11px;
+  text-align: center;
+  color:#000;
+}
+
+.b-badge--booked {
+  background: #84D8CA;
+}
+
+.b-badge--pending {
+  background: #FFB55E;
+}
+
+.b-badge--failed {
+  background: #FFCDD2;
+}
+
+.b-badge--refunded {
+  background: #F29386;
+}
+
+.booking-btn-view {
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid #E5E7EB;
+  background: #ffffff;
+  color: #111111;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.1s ease-in-out;
+}
+
+.booking-btn-view:hover {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.booking-btn-view--dark {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.booking-btn-view--dark:hover {
+  background: #333333;
+  border-color: #333333;
+}
+
+.booking-empty {
+  text-align: center;
+  padding: 30px;
+  color: #888888;
+  font-style: italic;
+}

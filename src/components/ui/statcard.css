@@ -1,0 +1,46 @@
+
+.stat-card {
+  flex: 1;
+  min-width: 180px;
+  padding: 24px;
+  cursor: pointer;
+  background: #F2F2F2;
+  border-radius: 0;
+  box-sizing: border-box;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.stat-card--active {
+  background: var(--brandcolor) !important;
+}
+
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-card-icon {
+  
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: 32px;
+}
+
+.stat-card-label {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  justify-content: center;
+}
+
+.stat-card--active .stat-card-label {
+  color: #333;
+}
+
+.stat-card-value {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}

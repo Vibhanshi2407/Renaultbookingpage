@@ -1,0 +1,19 @@
+.badge {
+  display: inline-block;;
+  padding:6px 2px ;
+  font-size: 10px;
+  font-weight: 300;
+  width: 60px;
+  text-align: center;
+  gap:10px;
+  line-height: 12px;
+  
+
+}
+ 
+.badge--booked   { background: #84D8CA;  color:black; }
+.badge--pending  { background: #FFB55E; color:black; }
+.badge--failed   { background: #F29386; color:black; }
+.badge--refunded {  background: #F29386; color:black; }
+.badge--default  {  background: #555555; color:black; }
+ 

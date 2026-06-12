@@ -1,0 +1,6 @@
+.stat-card-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 32px;
+}
