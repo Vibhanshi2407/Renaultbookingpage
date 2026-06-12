@@ -1,0 +1,211 @@
+.failed-booking-container {
+  padding: 24px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.failed-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.failed-summary {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.failed-summary-left {
+  flex: 1;
+  width:550px;
+}
+
+.failed-summary-right {
+  position: relative;
+}
+
+.failed-car-image {
+  width: 320px;
+}
+
+.cancelled-stamp {
+  position: absolute;
+  top: 9px;
+  left: 40px;
+}
+
+.summary-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.summary-item span:first-child {
+  width: 150px;
+  color: #777;
+}
+
+.refund-alert {
+  background: #FBDBD7;
+  padding: 10px ;
+  margin-top: 20px;
+  gap:10px;
+  width: 550px;
+}
+.refund-alert.span{
+  padding: 10px;
+}
+.refund-reason {
+  background: #fef0f0;
+  padding: 10px;
+  gap:20px;
+  width: 550px;
+    height: 162px;
+}
+
+.section {
+  margin-top: 40px;
+  width:550px;
+}
+
+.customer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.customer-grid span {
+  display: block;
+  color: #777;
+  font-size: 13px;
+}
+
+.customer-grid strong {
+  display: block;
+  margin-top: 4px;
+}
+
+.dealer-card {
+  margin-top: 24px;
+  background: #f5f5f5;
+  padding: 20px;
+  width:550px;
+  height: 102px;
+  gap:20px;
+}
+
+.refund-status-section {
+  margin-top: 40px;
+  width:550px;
+}
+
+.refund-status-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.refund-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.refund-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+.refund-step-content{
+  width:317px;
+  
+}
+
+.refund-step-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+.refund-step-number.completed {
+  background: #000;
+  color: white;
+}
+
+.refund-step-number.active {
+  background: var(--brandcolor);
+  color: #000;
+}
+
+.refund-step-number.pending {
+  background: #f5f5f5;
+  border: 1px solid #d9d9d9;
+  color: #bdbdbd;
+}
+
+.refund-step-content h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.refund-time {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.refund-details-row {
+  display: flex;
+  gap: 60px;
+}
+
+.refund-details-row span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+}
+
+.refund-details-row strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.refund-note {
+  margin-top: 14px;
+  max-width: 420px;
+
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.processing-text {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #222;
+}
+
+.refund-disabled h4 {
+  color: #cfcfcf;
+}

@@ -1,0 +1,65 @@
+.dealer-header{
+    margin-bottom: 24px;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    font-size: large;
+}
+.right{
+    display: flex;
+    direction: column;
+    gap:20px;
+}
+.download{
+flex: 1;
+  background: #fff;
+  border: 1px solid #000;
+  color: #1a1a1a;
+  font-weight: 700;
+  border-radius: 0%;
+  padding:15px 20px;
+  cursor:pointer;
+  gap:16px;
+}
+.adddealer{
+  flex: 1;
+  min-width: 150px;
+  background: var(--brandcolor);
+  color: #000;
+  font-weight: 700;
+  border-radius: 0%;
+  border-color: transparent;
+  cursor:pointer;
+
+}
+.dealer-card {
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+ 
+  background: #fff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+

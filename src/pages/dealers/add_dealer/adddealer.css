@@ -1,0 +1,80 @@
+.form-card {
+ 
+  background: #fff;
+  padding: 36px 32px;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16);
+}
+
+.form-card h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form-card p:first-of-type {
+  font-size: 13px;
+  color: #666;
+  margin-top: 0;
+}
+
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  border-color: #f0d500;
+  box-shadow: 0 0 0 3px rgba(240, 213, 0, 0.14);
+}
+
+.form-card form p {
+  color: red;
+  font-size: 12px;
+  margin: 6px 0 0;
+  min-height: 18px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card button {
+  padding: 14px 24px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-card .button-group {
+  display: flex;
+  gap: 14px;
+  width:280px;
+}
+
+.form-card button[type="button"] {
+  flex: 1;
+  background: #fff;
+  border: 2px solid #000;
+  color: #1a1a1a;
+  font-weight: 700;
+  border-radius: 0%;
+}
+
+.form-card button[type="submit"] {
+  flex: 1;
+  min-width: 150px;
+  background: #f0d500;
+  color: #000;
+  font-weight: 700;
+  border-radius: 0%;
+}
