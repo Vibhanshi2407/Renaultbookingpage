@@ -10,6 +10,7 @@ import DealerTable from "./components/datatable/Dealertable";
 import EditDealer from "./pages/dealers/edit_dealer/Editdealer";
 
 import './App.css';
+import './mobile-responsive.css';
 
 function App() {
   return (

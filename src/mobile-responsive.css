@@ -1,0 +1,481 @@
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+  
+  .app-page {
+    padding: 20px 16px;
+  }
+  
+  .app-main {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-page {
+    padding: 16px 12px;
+  }
+}
+
+/* Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .sidebar-logo {
+    padding: 12px 16px;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  
+  .sidebar-link {
+    width: auto;
+    white-space: nowrap;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-link-label {
+    display: none;
+  }
+  
+  .sidebar-link {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    padding: 8px;
+  }
+}
+
+/* Stat Card Row */
+@media (max-width: 1024px) {
+  .stat-card-row {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-card-row {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card-row {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Stat Card */
+@media (max-width: 768px) {
+  .stat-card {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card {
+    min-width: 100%;
+    padding: 16px;
+  }
+}
+
+/* Booking Page */
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+  
+  h3 {
+    font-size: 24px !important;
+    margin-top: 32px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .booking-page-header {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+    letter-spacing: 0 !important;
+  }
+  
+  h3 {
+    font-size: 20px !important;
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .booking-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .date-range-box {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  .btn-download {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  
+  h3 {
+    font-size: 18px !important;
+    margin-top: 20px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .date-range-box {
+    width: 100%;
+  }
+  
+  .btn-download {
+    width: 100%;
+    padding: 12px 16px;
+  }
+}
+
+/* Tables */
+@media (max-width: 1024px) {
+  .dealer-scroll {
+    overflow-x: auto;
+  }
+  
+  .dealer-table {
+    font-size: 12px;
+  }
+  
+  .dealer-table th,
+  .dealer-table td {
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dealer-card {
+    width: 100% !important;
+    padding: 12px;
+  }
+  
+  .dealer-table {
+    font-size: 11px;
+  }
+  
+  .dealer-table th,
+  .dealer-table td {
+    padding: 8px 4px;
+  }
+  
+  .dealer-btn-view {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dealer-table {
+    font-size: 10px;
+  }
+  
+  .dealer-table th,
+  .dealer-table td {
+    padding: 6px 3px;
+  }
+}
+
+/* Dealer Detail */
+@media (max-width: 768px) {
+  .dd-page {
+    padding: 16px;
+  }
+  
+  .dd-topbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .dd-title-row {
+    width: 100%;
+  }
+  
+  .dd-topbar-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .dd-btn-status,
+  .dd-btn-edit {
+    width: 100%;
+  }
+  
+  .dd-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dd-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dd-back-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+  
+  .dd-heading {
+    font-size: 20px;
+  }
+  
+  .dd-name {
+    font-size: 18px;
+  }
+}
+
+/* Form Card (Add/Edit Dealer) */
+@media (max-width: 768px) {
+  .form-card {
+    max-width: 90%;
+    padding: 24px 20px;
+  }
+  
+  .form-card h2 {
+    font-size: 24px;
+  }
+  
+  .form-card input,
+  .form-card select {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+  
+  .form-card button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    max-width: 95%;
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+  
+  .form-card h2 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .form-card p:first-of-type {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .form-card input,
+  .form-card select {
+    padding: 10px 12px;
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .form-card button {
+    padding: 12px 16px;
+    font-size: 13px;
+    width: 100%;
+  }
+}
+
+/* Modal */
+@media (max-width: 768px) {
+  .modal-overlay {
+    padding: 16px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    max-height: 95vh;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-overlay {
+    padding: 12px;
+  }
+  
+  .modal-content {
+    width: 100%;
+    border-radius: 12px;
+    max-height: calc(100vh - 24px);
+  }
+}
+
+/* Pagination */
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .pagination button,
+  .pagination span {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    gap: 4px;
+  }
+  
+  .pagination button,
+  .pagination span {
+    padding: 4px 6px;
+    font-size: 11px;
+  }
+}
+
+/* Dealer Header */
+@media (max-width: 768px) {
+  .dealer-header {
+    margin-left: 0;
+    padding: 0 16px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .dealer-header .left h2 {
+    font-size: 28px;
+  }
+  
+  .dealer-header .right {
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .download,
+  .adddealer {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dealer-header {
+    padding: 0 12px;
+  }
+  
+  .dealer-header .left h2 {
+    font-size: 22px;
+  }
+  
+  .dealer-header .right {
+    flex-direction: column;
+  }
+  
+  .download,
+  .adddealer {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+}
+
+/* Top Bar */
+@media (max-width: 768px) {
+  .topbar {
+    height: auto;
+    padding: 12px 16px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .topbar-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 12px;
+  }
+  
+  .topbar button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* General Text Sizing */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  button {
+    font-size: 13px;
+  }
+  
+  input,
+  select,
+  textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
