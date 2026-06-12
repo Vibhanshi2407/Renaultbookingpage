@@ -5,7 +5,7 @@ const navItems = [
   {
     icon: (
       <img
-        src="/src/assets/Images/elements.png"
+        src="src/assets/Images/elements.png"
         alt="Overview"
         width={20}
         height={20}
@@ -17,7 +17,7 @@ const navItems = [
   {
     icon: (
       <img
-        src="/src/assets/Images/total.png"
+        src="src/assets/Images/total.png"
         alt="Manage Dealers"
         width={20}
         height={20}
@@ -34,7 +34,7 @@ export default function Sidebar() {
       <div className="sidebar-logo">
         <NavLink to="/dashboard">
           <img
-            src="/src/assets/Images/rlogo.png"
+            src="src/assets/Images/rlogo.png"
             alt="Logo"
             width={60}
             height={60}
@@ -62,4 +62,4 @@ export default function Sidebar() {
       </nav>
     </aside>
   );
-}
+}

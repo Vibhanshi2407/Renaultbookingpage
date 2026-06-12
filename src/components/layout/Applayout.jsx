@@ -1,6 +1,6 @@
 import Sidebar from "./Sidebar";
 import TopBar from "./Topbar";
-import "./AppLayout.css";
+import "./applayout.css";
 
 export default function AppLayout({ children }) {
   return (
