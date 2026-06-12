@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./sidebar.css";
+import {over}from "src/assets/Images/elements.png";
+import {deal} from "src/assets/Images/total.png";
 
 const navItems = [
   {
     icon: (
       <img
-        src="src/assets/Images/elements.png"
+        src={over}
         alt="Overview"
         width={20}
         height={20}
@@ -17,7 +19,7 @@ const navItems = [
   {
     icon: (
       <img
-        src="src/assets/Images/total.png"
+        src={deal}
         alt="Manage Dealers"
         width={20}
         height={20}
