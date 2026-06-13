@@ -2,6 +2,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { ALL_BOOKINGS } from "../../data/bookingsData";
 import "./bookingdetail.css";
+import backarrow from "../../assets/Images/backarrow.png"
+import car from "../../assets/Images/carrenoult.png"
+import address from "../../assets/Images/address.png"
 
 export default function BookingDetail() {
   const { id } = useParams();
@@ -40,7 +43,7 @@ export default function BookingDetail() {
           onClick={() => navigate("/dashboard")}
         >
           <img
-            src=".././src/assets/Images/backarrow.png"
+            src={backarrow}
             alt="Back"
             className="back-icon"
           />  
@@ -80,7 +83,7 @@ export default function BookingDetail() {
 
         <div className="booking-summary-right">
           <img
-            src=".././src/assets/Images/carrenoult.png"
+            src={car}
             alt="Vehicle"
             className="vehicle-image"
            
@@ -138,7 +141,7 @@ export default function BookingDetail() {
         <div className="dealership-address-banner">
           <div className="dealer-icon-wrap">
             <img
-              src=".././src/assets/Images/address.png"
+              src={address}
               alt="Dealer"
               className="dealer-icon"
             />

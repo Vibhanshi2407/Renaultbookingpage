@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./dealerpage.css"
 import AddDealer from "./add_dealer/Adddealer";
 import DealerTable from "../../components/datatable/Dealertable";
+import download from  "../../assets/Images/down.png"
+
 
 export default function DealersPage() {
   const [isAddDealerOpen, setIsAddDealerOpen] = useState(false);
@@ -16,7 +18,7 @@ export default function DealersPage() {
         <div className="right">
           
             <button className="download">
-           <img src=".././src/assets/Images/down.png"
+           <img src={download}
            width={11} height={11}/>
 
               Download

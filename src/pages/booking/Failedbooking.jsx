@@ -1,7 +1,13 @@
 import "./failedbooking.css";
 import { useParams, useNavigate } from "react-router-dom";
 import { ALL_BOOKINGS } from "../../data/bookingsData";
-import "./failedbooking.css";
+import fail from "../../assets/Images/failclock.png"
+import backarrow from "../../assets/Images/backarrow.png"
+import car from "../../assets/Images/carrenoult.png"
+import cancel from "../../assets/Images/Cancelled.png"
+import address from "../../assets/Images/address.png"
+
+
 
 export default function FailedBookingDetail() {
   const { id } = useParams();
@@ -24,7 +30,7 @@ export default function FailedBookingDetail() {
           onClick={() => navigate("/dashboard")}
         >
           <img
-            src=".././src/assets/Images/backarrow.png"
+            src={backarrow}
             alt="Back"
             className="back-icon"
           />  
@@ -68,7 +74,7 @@ export default function FailedBookingDetail() {
 
           <div className="refund-alert">
            <span ><img
-             src=".././src/assets/Images/failclock.png" 
+             src={fail}
              alt="clock"
             width={14} 
             height={14}
@@ -96,14 +102,15 @@ export default function FailedBookingDetail() {
 
         <div className="failed-summary-right">
           <img
-            src=".././src/assets/Images/carrenoult.png"
+            src={car}
             alt="Vehicle"
             className="failed-car-image"
           />
 
           <div className="cancelled-stamp">
-           <img src=".././src/assets/Images/Cancelled.png">
-           </img>
+           <img src={cancel}
+           alt="cancel"
+          />
           </div>
         </div>
       </div>
@@ -157,7 +164,7 @@ export default function FailedBookingDetail() {
         <div className="dealership-address-banner">
           <div className="dealer-icon-wrap">
             <img
-              src=".././src/assets/Images/address.png"
+              src={address}
               alt="Dealer"
               className="dealer-icon"
             />

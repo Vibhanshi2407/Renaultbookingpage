@@ -3,6 +3,7 @@ import "./sidebar.css";
 import over from "../../assets/Images/elements.png";
 // import {deal} from ".././src/assets/Images/total.png";
 import deal from "../../assets/Images/total.png"
+import rlogo from "../../assets/Images/rlogo.png"
 
 const navItems = [
   {
@@ -37,7 +38,7 @@ export default function Sidebar() {
       <div className="sidebar-logo">
         <NavLink to="/dashboard">
           <img
-            src="src/assets/Images/rlogo.png"
+            src={rlogo}
             alt="Logo"
             width={60}
             height={60}

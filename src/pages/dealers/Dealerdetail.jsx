@@ -2,6 +2,11 @@ import { useParams, useNavigate } from "react-router-dom";
 import DEALERS from "../../data/delearData.js";
 import "./dealerdetail.css";
 import EditDealer from "./edit_dealer/Editdealer.jsx";
+import backarrow from  "../../assets/Images/backarrow.png"
+import tick from "../../assets/Images/tick.png"
+import edit from "../../assets/Images/edit.png"
+import addressdeal from "../../assets/Images/addr.png"
+
 
 
 export default function DealerDetails() {
@@ -23,7 +28,7 @@ export default function DealerDetails() {
       <div className="dd-topbar">
         <div className="dd-title-row">
           <button className="dd-back-btn" onClick={() => navigate("/dealers")}>
-            <img src=".././src/assets/Images/backarrow.png"/>
+            <img src={backarrow}/>
           </button>
           <h2 className="dd-heading">Dealer Details</h2>
         </div>
@@ -35,13 +40,13 @@ export default function DealerDetails() {
             </button>
           ) : (
             <button className="dd-btn-status dd-btn-status--active">
-                <img src=".././src/assets/Images/tick.png"/>
+                <img src={tick}/>
                Active
             </button>
           )}
           
 <button className="dd-btn-edit" onClick={() => navigate(`/dealers/${dealer.id}/edit`)}>
-            <img src=".././src/assets/Images/edit.png"/>
+            <img src={edit}/>
             
             Edit Dealer
           </button>
@@ -55,7 +60,7 @@ export default function DealerDetails() {
         </span>
       </div>
       <div className="addressdealer">
-        <img src=".././src/assets/Images/addr.png"/>
+        <img src={addressdeal}/>
       </div>
 
       <div className="dd-grid">

@@ -1,4 +1,10 @@
 import "./topbar.css";
+import search from "../../assets/Images/sea.png"
+import notifi from "../../assets/Images/notifi.png"
+import profile from "../../assets/Images/Oval.png"
+
+
+
 export default function TopBar({ dateRange = "Last 30 Days", onDownload }) {
   const today = new Date().toLocaleDateString("en-US", {
     day: "2-digit",
@@ -13,7 +19,7 @@ export default function TopBar({ dateRange = "Last 30 Days", onDownload }) {
       <div className="topbar-left">
         <input type="text" placeholder="Search..." className="topbar-search-input" />
         <img
-         src=".././src/assets/Images/search (2).png"
+         src={search}
           alt="Search" 
           className="topbar-search-icon" 
           />
@@ -21,8 +27,8 @@ export default function TopBar({ dateRange = "Last 30 Days", onDownload }) {
      
       <div className="topbar-right">
         <span className="topbar-date">{today}</span>
-        <img src="/src/assets/Images/notifi.png" alt="Notifications" className="topbar-icon" />
-        <img src="/src/assets/Images/Oval.png" alt="Profile" className="topbar-icon" />
+        <img src={notifi} alt="Notifications" className="topbar-icon" />
+        <img src={profile} alt="Profile" className="topbar-icon" />
       </div>
      
     </header>
